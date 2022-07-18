@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>テスト</title>
+
+        <style>
+            #camera.viewport {
+                height: 480px;
+                width:  640px;
+            }
+            #camera.viewport canvas, video {
+                float: left;
+                width: 640px;
+                height: 480px;
+            }
+            #camera.viewport canvas.drawingBuffer, video.drawingBuffer {
+                margin-left: -640px;
+            }
+        </style>
+
+        <script src="js/quagga.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+
+        <input type="text" id="result" placeholder="結果">
+        <div id="camera"></div>
+
+    </body>
+</html>
